@@ -1,7 +1,7 @@
 ## Introduction
 This document describes the process of creating the files `tidy_data_set.txt` and `tidy_data_set_mean.txt` using the data files downloaded from "Human Activity Recognition Using Smartphones" project."
 
-### File: `tidy_data_set.txt`
+#### File: `tidy_data_set.txt`
 This file was created by following the 4 broad steps below:
 
 1. Merges the training and the test sets to create one data set.
@@ -20,7 +20,7 @@ This file was created by following the 4 broad steps below:
 measurement.
   1. To achieve this, we will first have to read the following file
     * `features.txt` - contains the descriptive names for all measurements
-  2. As we are only concern with mean (i.e., names with _mean()_) and standard deviation (i.e., names with _std()_) measurements, we can proceed to subset a numeric vector specifying the column numbers relating to mean and standard deviation measurements. Bear in mind that we need to +2 to each element in the numeric vector as the first two columns of our data set relate to the subject and activity, not measurements.
+  2. As we are only concern with mean (i.e., names with __mean()__) and standard deviation (i.e., names with __std()__) measurements, we can proceed to subset a numeric vector specifying the column numbers relating to mean and standard deviation measurements. Bear in mind that we need to +2 to each element in the numeric vector as the first two columns of our data set relate to the subject and activity, not measurements.
   3. Finally, we can proceed to subset the relevant columns from our overall data set
           
 3. Uses descriptive activity names to name the activities in the data set.
@@ -36,12 +36,12 @@ measurement.
   4. Finally, we can proceed to rename our column names by using `colnames()`
   5. After this stage, our first tidy data set will be created using `write.table()`
 
-### File: `tidy_data_set_mean.txt`
+#### File: `tidy_data_set_mean.txt`
 This file was created by using the data set we created above and passing it through this last step.
 
 1. From the data set in step 4, creates a second, independent tidy data set with 
 the average of each variable for each activity and each subject.
   1. We will achieve this by using the `dplyr` package
-  2. First, we will group our data set by _subject_ and _activity_ by using `group_by()`
+  2. First, we will group our data set by __subject__ and __activity__ by using `group_by()`
   3. Then, we will create a data set with the mean for each variable for each activity and each subject by using `summarise_each()`
   4. Lastly, the required tidy data set for this project will be created using `write.table()`
