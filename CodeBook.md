@@ -2,12 +2,13 @@
 This document describes the process of creating the files `tidy_data_set.txt` and `tidy_data_set_mean.txt` using the data files downloaded from "Human Activity Recognition Using Smartphones" project."
 
 ### File: `tidy_data_set.txt`
-This file was created by following the 5 broad steps below:
+This file was created by following the 4 broad steps below:
+
 1. Merges the training and the test sets to create one data set.
-    i. To achieve this, we would first need to merge the following two files into 
-       one data frame:
-        * `./train/X_train.txt` - contains data of training sets
-        * `./test/X_test.txt` - contains data of test sets
+        i. To achieve this, we would first need to merge the following two files into 
+           one data frame:
+            * `./train/X_train.txt` - contains data of training sets
+            * `./test/X_test.txt` - contains data of test sets
     ii. Next, we need to merge the following two files into a second data frame:
         * `./train/subject_train.txt` - contains the human subject for whom the data in
           `./train/X_train.txt` relates to
