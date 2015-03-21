@@ -7,19 +7,19 @@ This file was created by following the 4 broad steps below:
 1. Merges the training and the test sets to create one data set.
         i. To achieve this, we would first need to merge the following two files into 
            one data frame:
-            * `./train/X_train.txt` - contains data of training sets
-            * `./test/X_test.txt` - contains data of test sets
-    ii. Next, we need to merge the following two files into a second data frame:
-        * `./train/subject_train.txt` - contains the human subject for whom the data in
-          `./train/X_train.txt` relates to
-        * `./test/subject_test.txt` - contains the human subject for whom the data in
-          `./test/X_test.txt` relates to
-    iii. Then, we need to merge the following two files into a third data frame:
-        * `./train/Y_train.txt` - contains the activity number performed by the human
-          subject for which the data in `./train/X_train.txt` relates to
-        * `./test/Y_test.txt` - contains the activity number performed by the human
-          subject for which the data in `./test/X_test.txt` relates to
-    iv. Finally, we will merge all three data frames to create one data set
+                * `./train/X_train.txt` - contains data of training sets
+                * `./test/X_test.txt` - contains data of test sets
+        ii. Next, we need to merge the following two files into a second data frame:
+                * `./train/subject_train.txt` - contains the human subject for whom the
+                  data in `./train/X_train.txt` relates to
+                * `./test/subject_test.txt` - contains the human subject for whom the
+                  data in `./test/X_test.txt` relates to
+        iii. Then, we need to merge the following two files into a third data frame:
+                * `./train/Y_train.txt` - contains the activity number performed by the 
+                  human subject for which the data in `./train/X_train.txt` relates to
+                * `./test/Y_test.txt` - contains the activity number performed by the
+                  human subject for which the data in `./test/X_test.txt` relates to
+        iv. Finally, we will merge all three data frames to create one data set
     
 2. Extracts only the measurements on the mean and standard deviation for each 
 measurement.
