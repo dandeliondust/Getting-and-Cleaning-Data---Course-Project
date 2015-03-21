@@ -57,6 +57,8 @@ colnames(relevant.data) <- variable.names
 
 ## First data set
 tidy1 <- relevant.data
+## Create text file for first data set
+write.table(tidy1, "tidy_data_set.txt", row.names = FALSE)
 
 ## 5. From the data set in step 4, creates a second, independent tidy data set 
 ## with the average of each variable for each activity and each subject.
